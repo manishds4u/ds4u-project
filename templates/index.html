@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" >
+   <head>
+      <meta charset="UTF-8">
+      <title>Web Whatsapp</title>
+     
+   </head>
+   <body>
+      <!-- partial:index.partial.html -->
+      <html lang="en">
+         <head>
+            <meta charset="UTF-8">
+            <title>Title</title>
+            <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+			<link rel="stylesheet" type="text/css" href="http://127.0.0.1:5000/static/style.css">
+            <script src="https://use.fontawesome.com/1c6f725ec5.js"></script>
+         </head>
+         <body>
+            <div class="green-background"></div>
+            <div class="wrap">
+            <!--<section class="left">
+               <div class="profile">
+                  <img src="img/specialist-user.png">
+                  <div class="icons">
+                     <i class="fa fa-commenting fa-lg" aria-hidden="true"></i>
+                     <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+                  </div>
+               </div>
+               <div class="wrap-search">
+                  <div class="search">
+                     <i class="fa fa-search fa" aria-hidden="true"></i>
+                     <input type="text" class="input-search" placeholder="Search chat">
+                  </div>
+               </div>
+               <div class="contact-list">
+               <div class="contact active-contact" id="5">
+               <div class="contact-preview">
+			   </div>
+			   </div>
+			   </div>
+            </section>-->
+            <section class="right">
+            <div class="chat-head">
+            <img alt="profilepicture" src="http://127.0.0.1:5000/static/img/specialist-user.png">
+            <div class="chat-name">
+            <h1 class="font-name">DREAMSOFT4U</h1>
+            </div>
+            <i class="fa fa-times fa-lg" aria-hidden="true" id="close-contact-information" style="display: none;"></i>
+            </div>
+            <div class="wrap-chat" id="chatContent">
+            <div class="chat">
+            </div>
+            <div class="information" style="display: none;">
+            <img src="https://-us3s-west-2.amazonaws.com/s.cdpn.io/1089577/contact6.JPG">
+           
+            <div id="listGroups"> 
+            <div class="listGroups">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1089577/contact1.jpg">
+            </div>
+            <div class="listGroups">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1089577/contact2.JPG">
+            </div>
+            <div class="listGroups">
+          
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="wrap-message">
+            <div class="message">
+            <input type="text" class="input-message" placeholder="Enter Message" >
+            <input type="hidden" id="counter" value="0"/>
+            </div>
+            <button id="buttonInput" type="button"  onClick="getBotResponse"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+            </div>
+            </section>
+            </div>
+         </body>
+      </html>
+      <!-- partial -->
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+      <script>
+         function getBotResponse() {
+         //alert("asdfdasdas");
+         var count = $("#counter").val();
+           var rawText = $(".input-message").val();
+		if(rawText != ""){
+           var userMe = '<div class="chat-bubble me userText1'+count+'"> <div class="my-mouth"></div>  <div class="content">' + rawText + '</div>    <div class="time">18:15</div>   </div>';
+         var userYou = '<div class="chat-bubble you userText'+count+'"> <div class="your-mouth"></div>   <div class="content"></div>    <div class="time">18:15</div>   </div>';
+         
+         $(".input-message").val("");
+           $(".chat").append(userMe);
+         $(".chat").append(userYou);
+		 //alert($('#chatContent').get(0).scrollHeight);
+		 
+          // document.getElementById('chatContent').scrollIntoView({block: 'start', behavior: 'smooth'});
+		  $("#chatContent").stop().animate({ scrollTop: $("#chatContent")[0].scrollHeight}, 1000);
+         $.ajax({
+         url: 'http://127.0.0.1:5000/chat',
+         contentType: "application/json",
+         type: "POST", /* or type:"GET" or type:"PUT" */
+         data: JSON.stringify({
+         "message" : rawText				
+         }),
+         success: function (result) {
+        // debugger;
+         console.log(result);    
+         var obj = JSON.parse(result);
+         $(".userText"+count).append("<br>");
+         //alert(count);
+         $(".userText"+count).append(obj[count].question);
+         
+         $("#counter").val(++count);
+		 
+         },
+         error: function () {
+         console.log("error");
+         }
+         });
+           /*$.post("http://127.0.0.1:5000/chat", { message: rawText }).done(function(data) {
+             var botHtml = '<p class="botText"><span>' + data + '</span></p>';
+             $("#chatbox").append(botHtml);
+             document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+           });*/
+		   
+		   
+		   }
+         }
+         $(".input-message").keydown(function(e) {
+		 codeKey = e.which || e.keycode;
+             if(codeKey == 13) {
+                 getBotResponse();
+             }
+         });
+         $("#buttonInput").click(function() {
+           getBotResponse();
+         })
+      </script>
+      <script  src="./script.js"></script>
+   </body>
+</html>
