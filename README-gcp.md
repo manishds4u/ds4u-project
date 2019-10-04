@@ -8,7 +8,9 @@ step2: install pip3:
 
 sudo apt install python3-pip
 
-step3: crate virtualenv: 
+step3: create virtualenv: 
+
+https://www.geeksforgeeks.org/creating-python-virtual-environment-windows-linux/
 
 pip3 install virtualenv
 
