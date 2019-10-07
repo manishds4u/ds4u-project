@@ -1,5 +1,18 @@
 follow link:
 https://towardsdatascience.com/a-beginners-guide-to-rasa-nlu-for-intent-classification-and-named-entity-recognition-a4f0f76b2a96
+
+possible rasa commad:
+
+usage: rasa [-h] [--version]
+            {init,run,shell,train,interactive,test,visualize,data,x} ...
+            
+            
+            
+            rasa init    -----for creating file
+            rasa shell ------for cmd chat
+            rasa train  ------ to train rasa model
+            rasa test-----to tetst rasa model
+            
 1:
 
 after activating virtualenvironment myenv
