@@ -101,7 +101,7 @@ rasa shell -m models/nlu-20190515-144445.tar.gz
  rasa run
  
  9.
- # to run both rasa server i.e rasa nlu and rasa core
+ #to run both rasa server i.e rasa nlu and rasa core
  
  #error free
  rasa run --enable-api --log-file out.log --cors "*"
