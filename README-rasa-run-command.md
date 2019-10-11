@@ -104,7 +104,10 @@ rasa shell -m models/nlu-20190515-144445.tar.gz
  #to run both rasa server i.e rasa nlu and rasa core
  
  #error free
- rasa run --enable-api --log-file out.log --cors "*"
+ 
+ rasa run --enable-api --log-file out.log --cors "*" 
+ 
+ rasa run --enable-api --log-file out.log --cors "*" --debug
  
  then run url on postman 
  
