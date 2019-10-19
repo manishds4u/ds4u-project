@@ -1,3 +1,6 @@
+#helping link
+link: https://github.com/dadecoza/starter-pack-rasa-stack
+
 1>>>>>>#rasa-bot-1
 
 #simple local database connection with response throgh action
