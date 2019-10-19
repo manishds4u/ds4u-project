@@ -1,3 +1,5 @@
+1>>>>>>#rasa-bot-1
+
 #simple local database connection with response throgh action
 
 #command to server and chatbot
