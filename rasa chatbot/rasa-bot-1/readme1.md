@@ -1,3 +1,6 @@
+#help link
+
+#link: https://github.com/dadecoza/starter-pack-rasa-stack
 
 #simple local database connection with response through action
 
