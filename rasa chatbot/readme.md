@@ -18,3 +18,10 @@ step2:
 
 rasa shell 
 
+
+
+#for converting json to md:
+
+from rasa_nlu.convert import convert_training_data
+
+convert_training_data(data_file="nlu.json", out_file="out_file.md", output_format="md", language="")
