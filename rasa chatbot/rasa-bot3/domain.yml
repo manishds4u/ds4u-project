@@ -1,0 +1,76 @@
+intents:
+- bye
+- greet
+- thank
+- affirm
+- joke
+- name
+- order_product
+- order_model
+- test
+- pincodes
+
+entities:
+- name
+- product
+- model
+- conditions
+- pincode
+
+slots:
+  name:
+    type: text
+  product:
+    type: text
+  model:
+    type: text
+  conditions:
+    type: text
+  pincode:
+    type: text
+
+actions:
+- utter_name
+- utter_thanks
+- utter_greet
+- utter_goodbye
+- utter_ask_model_name
+- utter_place_order
+- action_joke
+- utter_default
+- action_order_product
+- action_test
+- utter_ask_pincode
+- action_pincode
+
+templates:
+  utter_name:
+  - text: "Hey there! Tell me your name."
+
+  utter_greet:
+  - text: "Nice to you meet you {name}. How can I help?"
+
+  utter_goodbye:
+  - text: "Have a nice day {name}!"
+  
+  utter_thanks:
+  - text: "My pleasure."
+
+  utter_ask_model_name:
+  - text: "Which brand of {product} do you want to buy?"
+
+  utter_place_order:
+  - text: "Order was placed for {model} {product}"
+  
+  utter_ask_pincode:
+  - text: "What is your pincode to identify my availability?"
+  
+  utter_default:
+  - text: "sorry for inconvenent, Your call is very important to us, Our Customer Care Executive will contact you soon"
+  - text: "Sorry, I didn't get that. Could you please rephrase?"
+  - text: "I didn't understand, could you rephrase that?"
+  - text: "I'm sorry, but I didn't understand you. Could you please rephrase what you just said?"
+  - text: "I'm afraid I didn't get what you just said. Could you rephrase that?"
+  - text: "I didn't quite get that, could you rephrase your message?"
+  - text: "Could you rephrase your message? I didn't get it, I'm sorry."
+    

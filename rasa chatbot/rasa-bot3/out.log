@@ -1,0 +1,139 @@
+2019-10-31 18:07:13,211 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-10-31 18:07:56,065 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/rest/webhook/'
+Traceback (most recent call last):
+  File "c:\users\manish\pyrasa\pyrasaenv\lib\site-packages\sanic\app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "c:\users\manish\pyrasa\pyrasaenv\lib\site-packages\sanic\router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "c:\users\manish\pyrasa\pyrasaenv\lib\site-packages\sanic\router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /webhooks/rest/webhook/ not found
+2019-10-31 18:18:03,731 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-10-31 18:19:08,596 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/rest/webhook/'
+Traceback (most recent call last):
+  File "c:\users\manish\pyrasa\pyrasaenv\lib\site-packages\sanic\app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "c:\users\manish\pyrasa\pyrasaenv\lib\site-packages\sanic\router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "c:\users\manish\pyrasa\pyrasaenv\lib\site-packages\sanic\router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /webhooks/rest/webhook/ not found
+2019-10-31 18:19:19,760 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks'
+Traceback (most recent call last):
+  File "c:\users\manish\pyrasa\pyrasaenv\lib\site-packages\sanic\app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "c:\users\manish\pyrasa\pyrasaenv\lib\site-packages\sanic\router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "c:\users\manish\pyrasa\pyrasaenv\lib\site-packages\sanic\router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /webhooks not found
+2019-10-31 18:21:09,184 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/'
+Traceback (most recent call last):
+  File "c:\users\manish\pyrasa\pyrasaenv\lib\site-packages\sanic\app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "c:\users\manish\pyrasa\pyrasaenv\lib\site-packages\sanic\router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "c:\users\manish\pyrasa\pyrasaenv\lib\site-packages\sanic\router.py", line 446, in _get
+    raise method_not_supported
+sanic.exceptions.MethodNotSupported: Method POST not allowed for URL /
+2019-10-31 18:22:16,866 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/rest/webhook/'
+Traceback (most recent call last):
+  File "c:\users\manish\pyrasa\pyrasaenv\lib\site-packages\sanic\app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "c:\users\manish\pyrasa\pyrasaenv\lib\site-packages\sanic\router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "c:\users\manish\pyrasa\pyrasaenv\lib\site-packages\sanic\router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /webhooks/rest/webhook/ not found
+2019-10-31 18:27:03,468 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-10-31 18:27:13,494 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/rest/webhook/'
+Traceback (most recent call last):
+  File "c:\users\manish\pyrasa\pyrasaenv\lib\site-packages\sanic\app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "c:\users\manish\pyrasa\pyrasaenv\lib\site-packages\sanic\router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "c:\users\manish\pyrasa\pyrasaenv\lib\site-packages\sanic\router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /webhooks/rest/webhook/ not found
+2019-10-31 18:29:29,886 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/conversations/default/respond'
+Traceback (most recent call last):
+  File "c:\users\manish\pyrasa\pyrasaenv\lib\site-packages\sanic\app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "c:\users\manish\pyrasa\pyrasaenv\lib\site-packages\sanic\router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "c:\users\manish\pyrasa\pyrasaenv\lib\site-packages\sanic\router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /conversations/default/respond not found
+2019-11-01 14:31:41,584 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-11-01 14:31:58,968 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/'
+Traceback (most recent call last):
+  File "c:\users\manish\pyrasa\pyrasaenv\lib\site-packages\sanic\app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "c:\users\manish\pyrasa\pyrasaenv\lib\site-packages\sanic\router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "c:\users\manish\pyrasa\pyrasaenv\lib\site-packages\sanic\router.py", line 446, in _get
+    raise method_not_supported
+sanic.exceptions.MethodNotSupported: Method POST not allowed for URL /
+2019-11-01 14:32:42,311 [ERROR]  An exception occured while handling user message 'None'.
+Traceback (most recent call last):
+  File "c:\users\manish\pyrasa\pyrasaenv\lib\site-packages\rasa\core\channels\channel.py", line 459, in receive
+    text, collector, sender_id, input_channel=input_channel
+  File "c:\users\manish\pyrasa\pyrasaenv\lib\site-packages\rasa\core\channels\channel.py", line 81, in handler
+    await app.agent.handle_message(*args, **kwargs)
+  File "c:\users\manish\pyrasa\pyrasaenv\lib\site-packages\rasa\core\agent.py", line 470, in handle_message
+    return await processor.handle_message(message)
+  File "c:\users\manish\pyrasa\pyrasaenv\lib\site-packages\rasa\core\processor.py", line 80, in handle_message
+    tracker = await self.log_message(message, should_save_tracker=False)
+  File "c:\users\manish\pyrasa\pyrasaenv\lib\site-packages\rasa\core\processor.py", line 152, in log_message
+    await self._handle_message_with_tracker(message, tracker)
+  File "c:\users\manish\pyrasa\pyrasaenv\lib\site-packages\rasa\core\processor.py", line 324, in _handle_message_with_tracker
+    parse_data = await self._parse_message(message, tracker)
+  File "c:\users\manish\pyrasa\pyrasaenv\lib\site-packages\rasa\core\processor.py", line 300, in _parse_message
+    if message.text.startswith(INTENT_MESSAGE_PREFIX):
+AttributeError: 'NoneType' object has no attribute 'startswith'
+2019-11-01 14:37:13,402 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-11-01 15:48:18,341 [ERROR]  The model predicted the custom action 'action_order_product', but you didn't configure an endpoint to run this custom action. Please take a look at the docs and set an endpoint configuration via the --endpoints flag. https://rasa.com/docs/rasa/core/actions
+2019-11-01 15:48:18,344 [ERROR]  Encountered an exception while running action 'action_order_product'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2019-11-01 15:50:06,006 [ERROR]  The model predicted the custom action 'action_order_product', but you didn't configure an endpoint to run this custom action. Please take a look at the docs and set an endpoint configuration via the --endpoints flag. https://rasa.com/docs/rasa/core/actions
+2019-11-01 15:50:06,009 [ERROR]  Encountered an exception while running action 'action_order_product'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2019-11-01 16:18:26,159 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-11-01 17:47:43,260 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-11-01 17:50:27,455 [ERROR]  Encountered an exception while running action 'action_database'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2019-11-01 17:53:33,875 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-11-01 18:23:26,568 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-11-01 18:28:16,783 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-11-02 12:30:00,633 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-11-02 12:44:39,048 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-11-06 12:53:16,395 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-11-06 12:56:44,290 [ERROR]  Encountered an exception while running action 'action_pincode'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2019-11-06 12:57:19,880 [ERROR]  Encountered an exception while running action 'action_pincode'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2019-11-06 14:36:17,661 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-11-06 14:39:53,798 [ERROR]  Encountered an exception while running action 'action_pincode'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2019-11-06 14:45:15,951 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-11-06 14:47:46,441 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/rest/webhook/'
+Traceback (most recent call last):
+  File "c:\users\manish\pyrasa\pyrasaenv\lib\site-packages\sanic\request.py", line 149, in load_json
+    self.parsed_json = loads(self.body)
+  File "c:\users\manish\anaconda3\Lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "c:\users\manish\anaconda3\Lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "c:\users\manish\anaconda3\Lib\json\decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Invalid control character at: line 1 column 25 (char 24)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\manish\pyrasa\pyrasaenv\lib\site-packages\sanic\app.py", line 917, in handle_request
+    response = await response
+  File "c:\users\manish\pyrasa\pyrasaenv\lib\site-packages\rasa\core\channels\channel.py", line 439, in receive
+    sender_id = await self._extract_sender(request)
+  File "c:\users\manish\pyrasa\pyrasaenv\lib\site-packages\rasa\core\channels\channel.py", line 392, in _extract_sender
+    return req.json.get("sender", None)
+  File "c:\users\manish\pyrasa\pyrasaenv\lib\site-packages\sanic\request.py", line 143, in json
+    self.load_json()
+  File "c:\users\manish\pyrasa\pyrasaenv\lib\site-packages\sanic\request.py", line 153, in load_json
+    raise InvalidUsage("Failed when parsing body as json")
+sanic.exceptions.InvalidUsage: Failed when parsing body as json
+2019-11-06 15:09:01,007 [ERROR]  Encountered an exception while running action 'action_pincode'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
