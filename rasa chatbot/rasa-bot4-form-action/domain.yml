@@ -1,0 +1,103 @@
+intents:
+  - appointment_booking:
+      use_entities: []
+  - chitchat:
+      use_entities: []
+  - inform
+  - affirm
+  - deny
+  - stop
+  - thankyou
+  - greet
+  - bot_challenge
+  - fnames
+  - lnames
+  - contacts
+  - emails
+  - ages
+  - pincodes
+
+entities:
+  - fname
+  - lname
+  - contact
+  - email
+  - age
+  - pincode
+
+slots:
+  fname:
+    type: unfeaturized
+    auto_fill: false
+  lname:
+    type: unfeaturized
+    auto_fill: false
+  contact:
+    type: unfeaturized
+    auto_fill: false
+  email:
+    type: unfeaturized
+    auto_fill: false
+  age:
+    type: unfeaturized
+    auto_fill: false
+  pincode:
+    type: unfeaturized
+    auto_fill: false
+  requested_slot:
+    type: unfeaturized
+
+
+templates:
+  utter_ask_fname:
+    - text: "what's your first name?"
+  utter_ask_lname:
+    - text: "what's your last name?"
+  utter_ask_contact:
+    - text: "what is your phone?"
+  utter_ask_email:
+    - text: "please provide your email"
+  utter_ask_age:
+    - text: "what is your age?"
+  utter_ask_pincode:
+    - text: "please proovide your pincode"
+  utter_submit:
+    - text: "All done!"
+  utter_slots_values:
+    - text: "I am going to run a restaurant search using the following parameters:\n
+             - fname: {fname}\n
+             - lname: {lname}\n
+             - contact: {contact}\n
+             - email: {email}\n
+             - age: {age}\n
+             - pincode: {pincode}"
+  utter_noworries:
+    - text: "you are welcome :)"
+  utter_chitchat:
+    - text: "chitchat"
+  utter_ask_continue:
+    - text: "do you want to continue?"
+  utter_wrong_name:
+    - text: "name type is not in the database, please try again"
+  utter_wrong_age:
+    - text: "number of people should be a positive integer, please try again"
+  utter_wrong_outdoor_seating:
+    - text: "could not convert input to boolean value, please try again"
+  utter_default:
+    - text: "sorry, I didn't understand you, please try input something else"
+  utter_greet:
+    - text: "Hello! I am HEALTHCARE search assistant! How can I help?"
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+
+actions:
+  - utter_slots_values
+  - utter_noworries
+  - utter_chitchat
+  - utter_ask_continue
+  - utter_greet
+  - utter_iamabot
+  - action_name
+
+forms:
+  - appointment_form
