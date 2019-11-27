@@ -1,0 +1,149 @@
+intents:
+- appointment_booking:
+    use_entities: []
+- bye
+- greet
+- thank
+- affirm
+- name
+- test
+- pins
+- ask_package_price
+- ask_no_test
+- ask_home_charge
+- ask_book
+- fnames
+- lnames
+- contacts
+- emails
+- ages
+- pincodes
+- book_confirm
+- addresses
+
+entities:
+- name
+- conditions
+- pin
+- fname
+- lname
+- contact
+- email
+- age
+- pincode
+- address
+
+slots:
+  name:
+    type: text
+  product:
+    type: text
+  model:
+    type: text
+  conditions:
+    type: text
+  pin:
+    type: text
+  fname:
+    type: unfeaturized
+    auto_fill: false
+  lname:
+    type: unfeaturized
+    auto_fill: false
+  contact:
+    type: unfeaturized
+    auto_fill: false
+  email:
+    type: unfeaturized
+    auto_fill: false
+  age:
+    type: unfeaturized
+    auto_fill: false
+  pincode:
+    type: unfeaturized
+    auto_fill: false
+  address:
+    type: unfeaturized
+    auto_fill: false
+  requested_slot:
+    type: unfeaturized
+
+actions:
+- utter_name
+- utter_thanks
+- utter_greet
+- utter_goodbye
+- utter_default
+- action_test
+- utter_ask_pin
+- action_pin
+- action_price
+- utter_ask_home_charge
+- utter_ask_book_interest
+- utter_book
+- utter_slots_values
+- utter_book_confirm
+- action_book_api
+- utter_book_congrats
+- action_link
+- action_button
+
+templates:
+  utter_name:
+  - text: "Hey there! Tell me your name."
+
+  utter_greet:
+  - text: "Nice to you meet you {name}. How can I help?"
+
+  utter_goodbye:
+  - text: "Have a nice day {name}!"
+  
+  utter_thanks:
+  - text: "My pleasure."
+  
+  utter_ask_pin:
+  - text: "What is your pincode to identify my availability?"
+  
+  utter_ask_home_charge:
+  - text: "no"
+  
+  utter_ask_book_interest:
+  - text: "Are you interest in booking this package?"
+  
+  utter_book:
+  - text: "[For book](https://www.kayawell.com/book-lab-diagnostic-plan/book-online-lab-test)"
+
+  utter_ask_fname:
+  - text: "what's your first name?"
+  utter_ask_lname:
+  - text: "what's your last name?"
+  utter_ask_contact:
+  - text: "what is your phone?"
+  utter_ask_email:
+  - text: "please provide your email"
+  utter_ask_age:
+  - text: "what is your age?"
+  utter_ask_pincode:
+  - text: "please provide your pincode"
+  utter_ask_address:
+  - text: "please provide your address"
+  utter_submit:
+  - text: "All done!"
+  utter_slots_values:
+  - text: "Please provide following information to complete booking:\n
+             - fname: {fname}\n
+             - lname: {lname}\n
+             - contact: {contact}\n
+             - email: {email}\n
+             - age: {age}\n
+             - pincode: {pincode}\n
+             - address: {address}"
+  utter_default:
+    - text: "sorry, I didn't understand you, please try input something else"
+  utter_book_confirm:
+    - text: "Please review your infomation before submit..!! Type:correct or wrong"
+  utter_book_congrats:
+    - text: "You will get this information at your registerd mobile number also. If you have any query please call at +91 9999999999 (10 AM to 7 PM Mon to Sat"
+
+forms:
+  - appointment_form
