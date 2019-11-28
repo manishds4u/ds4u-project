@@ -25,3 +25,9 @@ rasa shell
 from rasa_nlu.convert import convert_training_data
 
 convert_training_data(data_file="nlu.json", out_file="out_file.md", output_format="md", language="")
+
+
+
+## to install rasa x on UI
+
+pip install rasa-x -i https://pypi.rasa.com/simple
