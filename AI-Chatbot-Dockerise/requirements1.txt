@@ -58,7 +58,7 @@ gym==0.14.0
 h5py==2.10.0
 hibagent==1.0.1
 html5lib==0.999999999
-httplib2==0.14.0
+httplib2==0.18.0
 httptools==0.0.13
 humanfriendly==4.18
 hyperlink==19.0.0
