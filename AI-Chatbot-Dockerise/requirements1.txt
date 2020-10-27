@@ -30,7 +30,7 @@ command-not-found==0.3
 ConfigArgParse==0.14.0
 configobj==5.0.6
 constantly==15.1.0
-cryptography==2.7
+cryptography==3.2
 cycler==0.10.0
 decorator==4.4.0
 dill==0.3.1.1
