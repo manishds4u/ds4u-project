@@ -98,7 +98,7 @@ numpy==1.17.2
 oauth2client==4.1.3
 oauthlib==2.0.6
 olefile==0.45.1
-opencv-python==4.1.1.26
+opencv-python==4.2.0.32
 packaging==19.2
 PAM==0.4.2
 pandas==0.22.0
